@@ -1,7 +1,2 @@
-FROM ubuntu:latest
-
-RUN apt-get -y update
-
-RUN apt install -y apache2
-
-COPY index.html /var/www/html/index.html
+FROM httpd:2.4
+COPY ./index.html/ /usr/local/apache2/htdocs/
