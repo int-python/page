@@ -1,2 +1,2 @@
-FROM  int-python/page
+FROM  test/page
 ADD . /var/www/html
